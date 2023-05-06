@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-body {
-    width: 100vw;
+.hero {
+    background-color: rgba(255, 166, 0, 0.297);
+    padding: 0 200px;
 }
-
 
 .landing {
     background-color: rgba(66, 46, 65, 0.637);
@@ -20,7 +20,8 @@ body {
 
 .logo {
     background-color: rgba(0, 128, 128, 0.287);
-    height: 5%;
+    /* height: 5%; */
+    padding-top: 10px;
     /* width: auto; */
     display: flex;
     align-items: center;
@@ -29,25 +30,215 @@ body {
 }
 
 .landing-text {
-    background-color: rgba(128, 128, 0, 0.217);
+    background-color: rgba(128, 128, 0, 0);
     height: 80%;
-    width: 80%;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     font-size: 36px;
     text-align: center;
 }
 
-/* .landing-btn button {
+.landing-btn {
     background-color: pink;
     font-size: 18px;
     border-radius: 10px;
     border: none;
-    width: 350px;
+    text-align: center;
+    /* max-width: 350px; */
     padding: 15px 60px;
-} */
+}
 
+.landing-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-2 {
+    min-height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.page-2 .page-text {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    padding: 40px 40px 40px 0px;
+}
+
+.page-2 .page-text h3 {
+    color: darkred;
+}
+
+.page-2 .page-text h1 {
+    font-size: 50px;
+}
+
+.page-2 .page-text p {
+    font-size: 24px;
+}
+
+.page-2 .page-text button {
+    margin-top: 15px;
+    width: 300px;
+    padding: 10px;
+}
+
+.page-3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 60vh;
+    background-color: rgb(241, 239, 239);
+    /* background-color: rgba(184, 135, 11, 0.47); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-3 .page-text {
+    width: 85%;
+}
+
+.page-3 .page-text h1 {
+    font-size: 50px;
+}
+
+.page-3 .page-text p {
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+
+.page-3 .growth {
+    /* background-color: orange; */
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.page-3 .growth .box {
+    display: flex;
+}
+
+.page-3 .growth .box .box-text {
+    text-align: center;
+    background-color: rgb(163, 68, 84);
+    padding: 60px 20px;
+    color: white;
+}
+
+.page-4 {
+    min-height: 40vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+    /* background-color: rgba(198, 182, 143, 0.47); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-4 .page-text {
+    width: 80%;
+}
+
+.page-4 .page-text h1 {
+    font-size: 50px;
+}
+
+.page-4 .page-text p {
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.page-5 {
+    min-height: 35vh;
+    background-color: rgb(205, 192, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+
+.page-5 .type {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: indianred; */
+}
+
+.page-5 .type .box {
+    display: flex;
+    vertical-align: top;
+    /* background-color: darkolivegreen; */
+
+}
+
+.page-5 .type .box .box-text {
+    /* text-align: center; */
+    /* background-color: cadetblue; */
+    padding: 60px 20px;
+    color: black;
+    vertical-align: top;
+}
+
+.page-5 button {
+    background-color: orange;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.page-6 {
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.426);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: white;
+}
+
+.page-6 .page-text {
+    /* background-color: orange; */
+    max-width: 800px;
+}
+
+.page-7 {
+    min-height: 80vh;
+    background-color: rgba(184, 135, 11, 0.47);
+}
+
+.page-8 {
+    min-height: 40vh;
+}
 
 
 
