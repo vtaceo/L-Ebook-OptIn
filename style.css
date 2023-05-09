@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
+h1,
+h2 {
+    font-family: 'Merriweather';
+}
+
+h3,
+p {
+    font-family: 'Montserrat';
+}
+
 .hero {
-    background-color: rgba(255, 166, 0, 0.297);
+    /* background-color: rgba(255, 166, 0, 0.297); */
     padding: 0 200px;
 }
 
 .landing {
-    background-color: rgba(66, 46, 65, 0.637);
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.693);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,8 +34,12 @@
     margin: auto;
 }
 
+.landing p {
+    font-family: 'Merriweather';
+}
+
 .logo {
-    background-color: rgba(0, 128, 128, 0.287);
+    /* background-color: rgba(0, 128, 128, 0.287); */
     /* height: 5%; */
     padding-top: 10px;
     /* width: auto; */
@@ -27,18 +47,20 @@
     align-items: center;
     color: rgb(255, 224, 249);
     font-size: 26px;
+    font-family: 'Merriweather';
 }
 
 .landing-text {
     background-color: rgba(128, 128, 0, 0);
     height: 80%;
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 36px;
     text-align: center;
+    font-family: 'Merriweather';
 }
 
 .landing-btn {
@@ -79,14 +101,18 @@
 
 .page-2 .page-text h3 {
     color: darkred;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .page-2 .page-text h1 {
     font-size: 50px;
+    font-family: 'Merriweather';
+    padding-bottom: 10px;
 }
 
 .page-2 .page-text p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .page-2 .page-text button {
@@ -114,6 +140,8 @@
 
 .page-3 .page-text h1 {
     font-size: 50px;
+    font-family: 'Merriweather';
+    padding-bottom: 10px;
 }
 
 .page-3 .page-text p {
@@ -156,8 +184,15 @@
     width: 80%;
 }
 
+.page-4 .page-text h3 {
+    color: darkred;
+    font-weight: 400;
+}
+
 .page-4 .page-text h1 {
     font-size: 50px;
+    font-family: 'Merriweather';
+    padding-top: 10px;
 }
 
 .page-4 .page-text p {
@@ -231,19 +266,130 @@
     max-width: 800px;
 }
 
+.page-6 h3 {
+    color: darkred;
+    font-weight: 400;
+}
+
 .page-7 {
-    min-height: 80vh;
-    background-color: rgba(184, 135, 11, 0.47);
+    min-height: 60vh;
+    background-color: rgb(247, 244, 243);
+}
+
+.page-7 .workers {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 60px 0;
+}
+
+.page-7 .workers .worker {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    /* gap: 50px; */
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.page-7 .workers .worker .worker-img {
+    display: flex;
+    align-items: center;
+    /* width: 500px;
+    height: 300px;
+    background-color: orange;
+    width: 300px; */
+}
+
+.page-7 h3 {
+    color: darkred;
+    font-weight: 400;
+}
+
+.page-7 p {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.worker-img img {
+    width: 200px;
+    height: auto;
+    /* width: 100%; */
+    padding-right: 20px;
 }
 
 .page-8 {
+    min-height: 30vh;
+    background-color: rgb(169, 81, 95);
+    text-align: center;
+}
+
+.page-8 .page-text {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 40vh;
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+.page-8 .page-text h1 {
+    font-size: 50px;
+}
+
+.page-8 .page-text button {
+    margin-top: 25px;
+    padding: 10px 50px;
+}
+
+.footer {
+    background-color: white;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
 }
 
 
 
 
+@media (max-width:1000px) {
 
+    .page-2 .page-text {
+        /* background-color: rgb(152, 113, 113); */
+        width: 80%;
+        height: auto;
+        padding: 40px 40px 40px 40px;
+    }
+}
+
+@media (max-width:868px) {
+    .page-2 {
+        min-height: 50vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+
+    .page-2 .page-text {
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* background-color: orange; */
+    }
+}
 
 
 
