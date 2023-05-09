@@ -368,6 +368,21 @@ p {
     }
 }
 
+@media (max-width: 992px) {
+    .hero {
+        padding: 25px 75px;
+    }
+
+    .page-7 .workers .worker {
+        margin: 20px 0;
+    }
+
+    .page-7 .workers .worker .page-text {
+        padding-right: 20px;
+    }
+
+}
+
 @media (max-width:868px) {
     .page-2 {
         min-height: 50vh;
@@ -391,6 +406,126 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    .page-3 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 60vh;
+        background-color: rgb(241, 239, 239);
+        /* background-color: rgba(184, 135, 11, 0.47); */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-3 .page-text {
+        width: 85%;
+    }
+
+    .page-3 .page-text h1 {
+        font-size: 50px;
+        font-family: 'Merriweather';
+        padding-bottom: 10px;
+    }
+
+    .page-3 .page-text p {
+        padding-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .page-3 .growth {
+        /* background-color: orange; */
+        display: flex;
+        column-gap: 20px;
+        flex-direction: column;
+
+    }
+
+    .page-3 .growth .box {
+        display: flex;
+    }
+
+    .page-3 .growth .box .box-text {
+        text-align: center;
+        background-color: rgb(163, 68, 84);
+        padding: 60px 20px;
+        color: white;
+    }
+
+    .page-5 {
+        min-height: 35vh;
+        background-color: rgb(205, 192, 192);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-5 .type {
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        /* background-color: indianred; */
+    }
+
+    .page-5 .type .box {
+        background-color: red;
+        display: flex;
+    }
+
+    .page-5 .type .box .box-text {
+        /* text-align: center; */
+        background-color: cadetblue;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-5 button {
+        background-color: orange;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .page-7 .workers {
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0 60px 0;
+    }
+
+    .page-7 .workers .worker {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        text-align: center;
+
+    }
+
+    .page-7 .workers .worker .worker-img {
+        padding-top: 20px;
+    }
+
+    .page-7 .workers .worker .page-text {
+        padding: 20px 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 25px 10px;
+    }
+}
 
 
 
