@@ -15,6 +15,12 @@ p {
     font-family: 'Montserrat';
 }
 
+button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 .hero {
     /* background-color: rgba(255, 166, 0, 0.297); */
     padding: 0 200px;
@@ -23,7 +29,7 @@ p {
 .landing {
     background-image: url("img/bg.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.693);
     display: flex;
@@ -64,13 +70,20 @@ p {
 }
 
 .landing-btn {
-    background-color: pink;
+    background-color: rgb(247, 170, 184);
     font-size: 18px;
     border-radius: 10px;
     border: none;
     text-align: center;
+    font-family: 'Montserrat';
     /* max-width: 350px; */
-    padding: 15px 60px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    transition: ease 0.3s;
+}
+
+.landing-btn:hover {
+    background-color: rgb(231, 223, 224);
 }
 
 .landing-btn a {
@@ -116,9 +129,20 @@ p {
 }
 
 .page-2 .page-text button {
-    margin-top: 15px;
+    background-color: rgb(247, 170, 184);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 300px;
     padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: ease 0.3s;
+}
+
+.page-2 .page-text button:hover {
+    background-color: rgb(231, 223, 224);
 }
 
 .page-3 {
@@ -150,20 +174,23 @@ p {
 }
 
 .page-3 .growth {
-    /* background-color: orange; */
     display: flex;
     column-gap: 20px;
+    justify-content: center;
 
 }
 
 .page-3 .growth .box {
     display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .page-3 .growth .box .box-text {
     text-align: center;
     background-color: rgb(163, 68, 84);
-    padding: 60px 20px;
+    padding: 60px 0px;
     color: white;
 }
 
@@ -202,7 +229,7 @@ p {
 
 .page-5 {
     min-height: 35vh;
-    background-color: rgb(205, 192, 192);
+    background-color: rgb(236, 236, 236);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,34 +237,41 @@ p {
     background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: screen;
+    background-blend-mode: lighten;
+    padding: 30px 0 30px 0;
 }
 
 .page-5 .type {
     display: flex;
+    flex-direction: column;
     column-gap: 20px;
     align-items: center;
     justify-content: center;
-    /* background-color: indianred; */
 }
 
 .page-5 .type .box {
     display: flex;
-    vertical-align: top;
-    /* background-color: darkolivegreen; */
+    padding: 20px 20px;
 
 }
 
 .page-5 .type .box .box-text {
-    /* text-align: center; */
-    /* background-color: cadetblue; */
-    padding: 60px 20px;
+    color: black;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-5 .type .box .box-text p {
+    padding: 10px 0px;
     color: black;
     vertical-align: top;
 }
 
+
 .page-5 button {
-    background-color: orange;
+    background-color: rgb(247, 170, 184);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -245,25 +279,36 @@ p {
     padding: 10px;
     border: none;
     border-radius: 10px;
+
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    transition: ease 0.3s;
+}
+
+.page-5 button:hover {
+    background-color: rgb(231, 223, 224);
 }
 
 .page-6 {
     min-height: 50vh;
-    background-color: rgba(0, 0, 0, 0.426);
+    background-color: rgba(0, 0, 0, 0.752);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+    background-image: url("img/bg2.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     color: white;
 }
 
 .page-6 .page-text {
-    /* background-color: orange; */
     max-width: 800px;
+    margin: auto;
 }
 
 .page-6 h3 {
@@ -277,7 +322,6 @@ p {
 }
 
 .page-7 .workers {
-    /* background-color: orange; */
     display: flex;
     flex-direction: column;
     padding: 60px 0 60px 0;
@@ -296,10 +340,6 @@ p {
 .page-7 .workers .worker .worker-img {
     display: flex;
     align-items: center;
-    /* width: 500px;
-    height: 300px;
-    background-color: orange;
-    width: 300px; */
 }
 
 .page-7 h3 {
@@ -343,7 +383,18 @@ p {
 
 .page-8 .page-text button {
     margin-top: 25px;
-    padding: 10px 50px;
+    background-color: rgb(247, 170, 184);
+    text-align: center;
+    max-width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: ease 0.3s;
+}
+
+.page-8 .page-text button:hover {
+    background-color: rgb(231, 223, 224);
 }
 
 .footer {
@@ -353,6 +404,7 @@ p {
     align-items: center;
     justify-content: center;
     color: grey;
+    text-align: center;
 }
 
 
@@ -362,9 +414,31 @@ p {
 
     .page-2 .page-text {
         /* background-color: rgb(152, 113, 113); */
-        width: 80%;
+        /* width: 80%;
         height: auto;
-        padding: 40px 40px 40px 40px;
+        padding: 40px 40px 40px 40px; */
+    }
+
+    .page-2 {
+        min-height: 50vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("img/nordwood-themes-bJjsKbToY34-unsplash.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+
+    .page-2 .page-text {
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        /* background-color: orange; */
     }
 }
 
@@ -402,7 +476,6 @@ p {
         width: 100vw;
         margin-top: 20px;
         margin-bottom: 20px;
-        /* background-color: orange; */
     }
 }
 
@@ -440,6 +513,7 @@ p {
         display: flex;
         column-gap: 20px;
         flex-direction: column;
+        row-gap: 20px;
 
     }
 
@@ -452,11 +526,11 @@ p {
         background-color: rgb(163, 68, 84);
         padding: 60px 20px;
         color: white;
+        width: 100%;
     }
 
     .page-5 {
         min-height: 35vh;
-        background-color: rgb(205, 192, 192);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -464,21 +538,16 @@ p {
     }
 
     .page-5 .type {
-        background-color: orange;
         display: flex;
         flex-direction: column;
         column-gap: 20px;
-        /* background-color: indianred; */
     }
 
     .page-5 .type .box {
-        background-color: red;
         display: flex;
     }
 
     .page-5 .type .box .box-text {
-        /* text-align: center; */
-        background-color: cadetblue;
         padding: 0px;
         display: flex;
         flex-direction: column;
@@ -486,7 +555,6 @@ p {
     }
 
     .page-5 button {
-        background-color: orange;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -497,7 +565,6 @@ p {
     }
 
     .page-7 .workers {
-        /* background-color: orange; */
         display: flex;
         flex-direction: column;
         padding: 60px 0 60px 0;
@@ -524,6 +591,52 @@ p {
 @media (max-width: 576px) {
     .hero {
         padding: 25px 10px;
+    }
+
+    .page-3 .page-text h1 {
+        font-size: 36px;
+    }
+
+    .page-3 .page-text p {
+        font-size: 16px;
+    }
+
+    .page-4 .page-text h1 {
+        font-size: 36px;
+    }
+
+    .page-4 .page-text p {
+        font-size: 16px;
+    }
+
+    .page-8 .page-text h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-2 .page-text {
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .page-2 .page-text button {
+        width: 100%;
+    }
+
+    .page-5 .button button {
+        width: 100%;
+    }
+
+    .page-7 .workers .worker .worker-img {
+        padding-top: 20px;
+        width: 60%;
+    }
+
+    .page-7 .workers .worker .worker-img img {
+        width: 100%;
     }
 }
 
